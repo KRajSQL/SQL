@@ -1,0 +1,28 @@
+ 
+
+
+
+CREATE TABLE RAD (id integer primary key, Brand TEXT, Name TEXT, Description TEXT, Dept TEXT, Quantity INTEGER, Year INTEGER, Price INTEGER);
+
+INSERT INTO RAD VALUES 
+(1, "Jack Links", "Jerky", "Peppercorn", "Food Beverage", 100, 2022,8),
+(2, "Pepsi", "Cola", "Orignial", "Food Beverage", 300, 2022, 2),
+(3, "Pepsi", "Cola", "Diet", "Food Beveverage", 400, 2022, 2),
+(4, "Strike", "Worm", "Chartreuse", "Soft Bait", 100, 2021,7), 
+(5, "Strike", "Worm", "Red", "Soft Bait", 100,2022,7), 
+(6, "Strike", "Worm", "Green", "Soft Bait", 100,2022,6),
+(7, "Strike", "Worm", "White", "Soft Bait", 50,2022,7), 
+(8, "Strike", "Worm", "Silver Glitter", "Soft Bait", 100,2021,7), 
+(9, "Strike", "Worm", "Pumpkin", "Soft Bait",200,2022,7),
+(10, "Shimano", "Rod", "Medium 6ft", "Rods",9,2021,80),
+(11, "Shimano", "Rod", "Light 5ft", "Rods",15,2022,90),
+(12, "Shimano", "Rod", "Medium 8ft", "Rods",10,2022,85),
+(13, "Shimano", "Calcutta50", "Baitcaster", "Reels", 5,2021,200), 
+(14, "Shimano", "Calcutta100", "Baitcaster", "Reels", 10,2021,350), (15, "Mercury", "Legacy200", "V6 engine", "Motors", 3,2022,600);
+
+SELECT NAME, PRICE FROM RAD ORDER BY PRICE;
+
+SELECT YEAR,NAME,DESCRIPTION FROM RAD WHERE YEAR <2022  
+
+
+
